@@ -8,7 +8,7 @@
 		<div id="services"></div>
 
 		<LazySectionType
-			imgSrc="../static/imgs/creative-gif.webp"
+			imgSrc="./../static/imgs/creative-gif.webp"
 			title="Creative"
 			subtitle="Do you have an idea? Let us help realize it."
 			color="orange"
@@ -21,7 +21,7 @@
 		/>
 		<div id="services-offline"></div>
 		<LazySectionType
-			imgSrc="../static/imgs/offline-gif.gif"
+			imgSrc="./../static/imgs/offline-gif.gif"
 			title="Offline"
 			subtitle="“Fix it in post” that doesn’t bother us."
 			color="yellow"
@@ -38,7 +38,7 @@
 		<div id="services-online"></div>
 		<LazySectionType
 			class="contact"
-			imgSrc="../static/imgs/online-gif.webp"
+			imgSrc="./../static/imgs/online-gif.webp"
 			title="Online"
 			subtitle="We Provide the finishing touch"
 			color="red"
