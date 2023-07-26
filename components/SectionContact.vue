@@ -4,7 +4,7 @@
 		<div class="contact-container">
 			<h1 class="heading">How Can We Help</h1>
 			<img
-				src="../public/imgs/contact-img.jpg"
+				src="/imgs/contact-img.jpg"
 				alt="image of an office building"
 			/>
 			<button

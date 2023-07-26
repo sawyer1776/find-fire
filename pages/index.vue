@@ -21,7 +21,7 @@
 		/>
 		<div id="services-offline"></div>
 		<LazySectionType
-			imgSrc="./../public/imgs/offline-gif.gif"
+			imgSrc="/imgs/offline-gif.gif"
 			title="Offline"
 			subtitle="“Fix it in post” that doesn’t bother us."
 			color="yellow"
@@ -38,7 +38,7 @@
 		<div id="services-online"></div>
 		<LazySectionType
 			class="contact"
-			imgSrc="../public/imgs/online-gif.webp"
+			imgSrc="/imgs/online-gif.webp"
 			title="Online"
 			subtitle="We Provide the finishing touch"
 			color="red"

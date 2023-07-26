@@ -2,7 +2,7 @@
 	<nav>
 		<NuxtLink @click="showMenu = false" to="/">
 			<img
-				src="../public/imgs/logo-transparent-horizontal.png"
+				src="/imgs/logo-transparent-horizontal.png"
 				alt=""
 			/>
 		</NuxtLink>
