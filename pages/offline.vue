@@ -1,7 +1,7 @@
 <template>
 	<main>
 		<PageHeading
-			imgSrc="../static/imgs/offline-gif.gif"
+			imgSrc="../public/imgs/offline-gif.gif"
 			altText="animation of man in edit suite"
 			title="Offline"
 			subtitle="“Fix it in post” that doesn’t bother us."
@@ -10,21 +10,21 @@
 
 		<SectionDescription
 			color="orange"
-			imgSrc="../static/imgs/offline-editorial.jpg"
+			imgSrc="../public/imgs/offline-editorial.jpg"
 			altText="screenshot of a timeline in an editing software image shows men on camels in front of a truck"
 			title="Editorial"
 			text="A team of editors to organize, cut , manage , and assemble the pieces of each project to bring to life every vision."
 		/>
 		<SectionDescription
 			color="yellow"
-			imgSrc="../static/imgs/offline-sound.jpg"
+			imgSrc="../public/imgs/offline-sound.jpg"
 			altText="A man and woman singing in a recording booth"
 			title="Sound Mixing, Foley, ADR"
 			text="Providing finish audio sweetening, advanced dialogue replacement services, and full foley service, allow us to help clean up, record, and create your audio tracks, with a full support of tools and resources to build the entire projects soundtracks."
 		/>
 		<SectionDescription
 			color="red"
-			imgSrc="../static/imgs/offline-music.jpeg"
+			imgSrc="../public/imgs/offline-music.jpeg"
 			altText="Man infront of a sound panel"
 			title="Music"
 			text="From custom composing from award winning composers and live instrument recording, or simple digital  track creation our team has the background and talents to immerse your projects with the perfect music to tell your story and set your mood."

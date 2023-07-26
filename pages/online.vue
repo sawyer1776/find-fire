@@ -3,7 +3,7 @@
 <template>
 	<main>
 		<PageHeading
-			imgSrc="../static/imgs/online-gif.webp"
+			imgSrc="../public/imgs/online-gif.webp"
 			altText="animation of man in edit suite"
 			title="Online"
 			subtitle="We provide that  perfect finishing touch."
@@ -11,8 +11,8 @@
 		/>
 
 		<ColorGradeImg
-			img1="../static/imgs/online-color3.jpeg"
-			img2="../static/imgs/online-color4.jpeg"
+			img1="../public/imgs/online-color3.jpeg"
+			img2="../public/imgs/online-color4.jpeg"
 		/>
 
 		<SectionDescription
@@ -22,14 +22,14 @@
 		/>
 		<SectionDescription
 			color="orange"
-			imgSrc="../static/imgs/online-vfx.png"
+			imgSrc="../public/imgs/online-vfx.png"
 			altText="cut out image of an explosion"
 			title="VFX"
 			text="Flame, After Effects, Maya, 3D motion capture and more! Require visual  effects for your project? Allow us to service those needs for you.  Who doesn’t like a fun explosion?"
 		/>
 		<SectionDescription
 			color="red"
-			imgSrc="../static/imgs/online-mastering.jpeg"
+			imgSrc="../public/imgs/online-mastering.jpeg"
 			altText="NEED NEW IMG"
 			title="Mastering & Delivery"
 			text="You’ve crossed the finish line of your project but need those last few mastering and export layout passes in order to get your project delivered. Allow our team to organize that work load for you, organize  the deliverables, and ensure all deadlines and needs are met. 
