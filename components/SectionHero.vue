@@ -1,7 +1,7 @@
 <template>
 	<section>
 		<img
-			src="../static/imgs/FindFire_Stacked_BrownBG_RGB.jpg"
+			src="../public/imgs/FindFire_Stacked_BrownBG_RGB.jpg"
 			alt="Logo of a man with a spear silhouetted agains a fire"
 		/>
 		<div class="video">
