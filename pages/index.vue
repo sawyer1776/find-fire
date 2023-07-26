@@ -38,7 +38,7 @@
 		<div id="services-online"></div>
 		<LazySectionType
 			class="contact"
-			imgSrc="./../static/imgs/online-gif.webp"
+			imgSrc="../static/imgs/online-gif.webp"
 			title="Online"
 			subtitle="We Provide the finishing touch"
 			color="red"
