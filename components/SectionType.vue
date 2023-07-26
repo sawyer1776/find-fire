@@ -1,0 +1,112 @@
+<template>
+	<section>
+		<img :src="imgSrc" alt="alt texting" />
+		<h1 :class="color" class="section-title">
+			{{ title }}
+		</h1>
+		<aside>
+			<h2>{{ subtitle }}</h2>
+			<ul>
+				<li v-for="item in items" :key="item[0]">
+					<div class="icon">
+						<Icon class="icon" :name="item[1]" />
+					</div>
+					<h3>{{ item[0] }}</h3>
+				</li>
+			</ul>
+			<NuxtLink :to="destination">
+				<button>
+					Learn More
+					<Icon
+						class="arrow"
+						name="octicon:arrow-right-16"
+					/>
+				</button>
+			</NuxtLink>
+		</aside>
+		<p>{{ text }}</p>
+	</section>
+</template>
+
+<script>
+export default {
+	props: [
+		'text',
+		'title',
+		'subtitle',
+		'items',
+		'color',
+		'imgSrc',
+		'destination',
+	],
+};
+</script>
+
+<style scoped>
+section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 0rem;
+	margin-bottom: 2rem;
+}
+h1 {
+	margin: 2rem 1.5rem;
+	align-self: flex-start;
+}
+img {
+	width: 100vw;
+	/* margin: 0 auto; */
+}
+
+aside {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 2rem;
+	width: 100%;
+	padding: 0rem 1.5rem;
+	color: var(--offwhite);
+}
+
+h2 {
+	font-size: 1.75rem;
+	font-weight: 600;
+	line-height: 1.5;
+}
+
+button {
+	display: flex;
+	align-items: center;
+}
+.icon {
+	width: 4.25rem;
+	height: 4.25rem;
+	color: var(--offwhite);
+}
+.arrow {
+	width: 2.5rem;
+	height: 2.5rem;
+	color: var(--offwhite);
+}
+
+h3 {
+	font-size: 1.75rem;
+	font-weight: 600;
+	line-height: 1.5;
+}
+li {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	margin-bottom: 2rem;
+}
+ul {
+	margin-left: 1.5rem;
+}
+a {
+	align-self: flex-end;
+}
+</style>
