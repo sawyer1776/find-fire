@@ -48,7 +48,7 @@ export default {
 
 .title {
 	width: 100%;
-	background-color: var(--dark-brown);
+	background-color: var(--brand-brown);
 	padding: 1.5rem;
 }
 h3 {

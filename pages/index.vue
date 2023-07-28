@@ -156,8 +156,8 @@ button:active {
 .section-title {
 	font-size: 2.75rem;
 	line-height: 1.25;
-	padding: 0.75rem 1rem;
-	background-color: var(--dark-brown);
+	/* padding: 0.75rem 1rem; */
+	/* background-color: black; */
 	width: fit-content;
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
@@ -191,7 +191,7 @@ button:active {
 	gap: 4rem;
 	width: 100vw;
 	padding: 1.5rem;
-	background-color: var(--brand-brown);
+	background-color: var(--dark-brown);
 }
 
 #services {
@@ -244,7 +244,7 @@ button:active {
 	.section-title {
 		font-size: 4rem;
 
-		padding: 1rem 2rem;
+		/* padding: 1rem 2rem; */
 	}
 
 	.heading {
@@ -262,11 +262,11 @@ button:active {
 @media (min-width: 1090px) {
 	.main-content {
 		width: 75vw;
-		max-width: 190rem;
+		max-width: 125rem;
 		margin: 0 auto;
 	}
 	body {
-		background-color: var(--dark-brown);
+		/* background-color: var(--dark-brown); */
 	}
 }
 </style>
