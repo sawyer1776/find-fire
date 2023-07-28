@@ -41,9 +41,11 @@ export default {
 .button {
 	width: 100%;
 	padding: 0 4rem;
+	max-width: 60rem;
 }
 
 .title {
+	width: 100%;
 	background-color: var(--dark-brown);
 	padding: 1.5rem;
 }
@@ -63,5 +65,18 @@ h3 {
 img {
 	margin-top: 1.5rem;
 	width: 100vw;
+}
+
+@media (min-width: 550px) {
+	.main {
+		gap: 4rem;
+		margin-bottom: 6rem;
+	}
+	h3 {
+		font-size: 3rem;
+	}
+	.title {
+		padding: 3rem;
+	}
 }
 </style>

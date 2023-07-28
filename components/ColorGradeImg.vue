@@ -25,9 +25,8 @@
 					@mousedown="
 						(clickStart = true), (isPaused = true)
 					"
-					@mouseup="
-						(clickStart = false), (isDragging = false)
-					"
+					@mouseup="clickStart = false"
+					@mouseleave="clickStart = false"
 					@mousemove="clickSlider"
 					@touchstart="isPaused = true"
 					@touchmove="dragSlider"
@@ -75,12 +74,27 @@ export default {
 				this.position = tempPosition;
 			}
 		},
-		// clickSlider(event) {
-		// 	if (this.clickStart === true) {
-		// 		this.isDragging = true;
-		// 		this.position = 100 - event.clientX / 19.2;
-		// 	}
-		// },
+		clickSlider(event) {
+			if (this.clickStart === true) {
+				this.isDragging = true;
+
+				let tempPosition =
+					100 -
+					event.x /
+						(event.target.closest('.imageSplit')
+							.offsetWidth *
+							0.01);
+				if (tempPosition >= 100) {
+					this.position = 99;
+				}
+				if (tempPosition <= 0) {
+					this.position = 1;
+				}
+				if (tempPosition > 0 && tempPosition < 99) {
+					this.position = tempPosition;
+				}
+			}
+		},
 	},
 	props: ['img1', 'img2'],
 };
@@ -88,6 +102,8 @@ export default {
 
 <style scoped>
 .imageSplit {
+	/* border: 2px solid red;
+	border-radius: 29px; */
 	position: relative;
 	width: 100%;
 	height: fit-content;
@@ -113,7 +129,7 @@ export default {
 .btm-triangle {
 	bottom: -3.5rem;
 	left: 0;
-	transform: translate(0%, calc(50% + 1px));
+	transform: translate(0%, 50%);
 	position: absolute;
 	rotate: 90deg;
 }
@@ -125,8 +141,15 @@ export default {
 
 .starting-img {
 	z-index: 1;
+	border: 2px solidvar(--dark-brown);
+	border-radius: 9px;
 }
 .ending-img {
+	border-top: 2px solid var(--dark-brown);
+	border-right: 2px solid var(--dark-brown);
+	border-bottom: 2px solid var(--dark-brown);
+	border-top-right-radius: 9px;
+	border-bottom-right-radius: 9px;
 	top: 0;
 	right: 0;
 	z-index: 2;
@@ -178,5 +201,41 @@ export default {
 
 .paused {
 	animation-play-state: paused;
+}
+
+@media (min-width: 550px) {
+	.marker-triangle {
+		width: 8rem;
+		height: 8rem;
+	}
+	.btm-triangle {
+		bottom: -7rem;
+	}
+	.imageSplit {
+		margin-bottom: 4rem;
+	}
+	.starting-img {
+		border: 2px solidvar(--dark-brown);
+		border-radius: 12px;
+	}
+	.ending-img {
+		border-top: 3px solid var(--dark-brown);
+		border-right: 3px solid var(--dark-brown);
+		border-bottom: 3px solid var(--dark-brown);
+		border-top-right-radius: 12px;
+		border-bottom-right-radius: 12px;
+	}
+}
+@media (min-width: 1100px) {
+	.marker-triangle {
+		width: 10rem;
+		height: 10rem;
+	}
+	.btm-triangle {
+		bottom: -9rem;
+	}
+	.imageSplit {
+		margin-bottom: 6rem;
+	}
 }
 </style>

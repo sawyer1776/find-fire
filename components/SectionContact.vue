@@ -95,6 +95,7 @@ export default {
 section {
 	width: 100%;
 	margin-bottom: 5rem;
+	max-width: 75rem;
 }
 .contact-container {
 	border-radius: 5px;
@@ -107,6 +108,7 @@ section {
 	padding: 3rem 1rem;
 	background-color: var(--brand-orange);
 	padding-bottom: 5rem;
+	box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 h1 {
 	color: var(--offwhite);
@@ -122,7 +124,7 @@ h3 {
 img {
 	width: 100%;
 	margin-bottom: 1rem;
-	border-radius: 10px;
+	border-radius: 9px;
 	border: 2px solid var(--dark-brown);
 	z-index: 2;
 }
@@ -182,8 +184,8 @@ form {
 }
 
 #contact {
-	height: 5rem;
-	margin-top: -5rem;
+	height: 8rem;
+	margin-top: -8rem;
 }
 
 .v-enter-from {
@@ -199,5 +201,52 @@ form {
 .v-enter-to {
 	opacity: 1;
 	transform: translateY(0);
+}
+
+@media (min-width: 550px) {
+	section {
+		max-width: 65rem;
+	}
+
+	.contact-container {
+		border-radius: 9px;
+		gap: 4rem;
+		padding: 5rem;
+		padding-bottom: 9rem;
+		box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.25);
+	}
+	h3 {
+		font-size: 3.5rem;
+	}
+	img {
+		border-radius: 12px;
+		border: 3px solid var(--dark-brown);
+	}
+	button {
+		font-size: 3.5rem;
+	}
+	form {
+		gap: 1.5rem;
+	}
+	.input {
+		padding: 1rem 2rem;
+		font-size: 4rem;
+		border-radius: 9px;
+	}
+	#message {
+		height: 20rem;
+	}
+	.icon {
+		width: 5rem;
+		height: 5rem;
+	}
+	.phone-number {
+		font-size: 4rem;
+		font-weight: 600;
+		border-radius: 12px;
+		border-top-left-radius: 0px;
+		border-top-right-radius: 0px;
+		margin-top: -2rem;
+	}
 }
 </style>

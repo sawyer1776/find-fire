@@ -109,4 +109,42 @@ ul {
 a {
 	align-self: flex-end;
 }
+
+@media (min-width: 550px) {
+	h1 {
+		margin: 2rem 6rem;
+	}
+	aside {
+		width: 100%;
+		padding: 0rem 6rem;
+	}
+	section {
+		max-width: 92rem;
+	}
+	h2 {
+		font-size: 2.75rem;
+	}
+	.icon {
+		width: 8rem;
+		height: 8rem;
+	}
+	h3 {
+		font-size: 2.75rem;
+	}
+	.arrow {
+		width: 5rem;
+		height: 5rem;
+		color: var(--offwhite);
+	}
+}
+@media (min-width: 1090px) {
+	section {
+		width: 100%;
+	}
+	img {
+		width: 100%;
+		border-radius: 9px;
+		border: 3px solid var(--dark-brown);
+	}
+}
 </style>

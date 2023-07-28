@@ -60,4 +60,38 @@ a {
 	font-size: 1.2rem;
 	font-weight: 300;
 }
+@media (min-width: 550px) {
+	footer {
+		gap: 3rem;
+		padding: 3rem 2rem;
+	}
+
+	h2 {
+		font-size: 3.5rem;
+	}
+	p {
+		font-size: 3rem;
+	}
+	ul {
+		gap: 1.5rem;
+		border-bottom: 4px solid var(--light-grey);
+		padding-bottom: 2rem;
+	}
+
+	a {
+		font-size: 3rem;
+	}
+	.copyright {
+		font-size: 2rem;
+	}
+}
+
+@media (min-width: 1090px) {
+	footer {
+		width: 75vw;
+		max-width: 190rem;
+		margin: 0 auto;
+		padding: 3rem 0;
+	}
+}
 </style>

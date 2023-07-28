@@ -91,9 +91,7 @@ html {
 
 body {
 	background-color: var(--brand-brown);
-
 	font-family: 'Open Sans', sans-serif;
-
 	overflow-x: hidden;
 	line-height: 1;
 	font-weight: 400;
@@ -196,16 +194,16 @@ button:active {
 }
 
 #services {
-	height: 5rem;
-	margin-top: -5rem;
+	height: 8rem;
+	margin-top: -8rem;
 }
 #services-online {
-	height: 5rem;
-	margin-top: -5rem;
+	height: 8rem;
+	margin-top: -8rem;
 }
 #services-offline {
-	height: 5rem;
-	margin-top: -5rem;
+	height: 8rem;
+	margin-top: -8rem;
 }
 .red {
 	color: var(--brand-red);
@@ -236,5 +234,39 @@ button:active {
 .page-leave-from,
 .page-enter-to {
 	transform: translateX(0);
+}
+
+@media (min-width: 550px) {
+	p {
+		font-size: 2.4rem;
+	}
+	.section-title {
+		font-size: 6rem;
+
+		padding: 1.5rem 2rem;
+	}
+
+	.heading {
+		font-size: 4.5rem;
+	}
+	button {
+		padding: 1rem 2rem;
+		font-size: 3rem;
+		border-radius: 12px;
+		letter-spacing: 0.1rem;
+		border: 3px solid black;
+	}
+}
+
+@media (min-width: 1090px) {
+	.main-content {
+		width: 75vw;
+		max-width: 190rem;
+		margin: 0 auto;
+		background-color: var(--brand-brown);
+	}
+	body {
+		background-color: var(--dark-brown);
+	}
 }
 </style>

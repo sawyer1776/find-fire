@@ -35,7 +35,6 @@ article {
 }
 img {
 	width: 100%;
-
 	border-radius: 9px;
 	border: 2px solid var(--dark-brown);
 }
@@ -44,5 +43,18 @@ h2 {
 }
 p {
 	color: var(--offwhite);
+}
+
+@media (min-width: 550px) {
+	article {
+		margin-bottom: 10rem;
+	}
+	img {
+		border-radius: 12px;
+		border: 3px solid var(--dark-brown);
+	}
+	p {
+		font-size: 3.25rem;
+	}
 }
 </style>

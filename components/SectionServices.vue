@@ -50,4 +50,19 @@ p {
 	margin-top: 1rem;
 	color: var(--brand-yellow);
 }
+
+@media (min-width: 550px) {
+	.buttons {
+		max-width: 75rem;
+		margin-bottom: 3rem;
+		gap: 2.5rem;
+	}
+	.card {
+		gap: 4rem;
+		padding: 2rem 4rem;
+		box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.25);
+		border-radius: 12px;
+		max-width: 75rem;
+	}
+}
 </style>

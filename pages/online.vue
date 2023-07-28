@@ -63,10 +63,12 @@ main {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	margin: 0 auto;
 	gap: 4rem;
 	width: 100vw;
+	max-width: 85rem;
 	padding: 0 1.5rem;
-	overflow-x: hidden;
+	overflow-x: visable;
 }
 button {
 	display: flex;
@@ -95,5 +97,11 @@ button {
 .page-leave-from,
 .page-enter-to {
 	transform: translateX(0);
+}
+@media (min-width: 550px) {
+	.icon {
+		width: 4rem;
+		height: 4rem;
+	}
 }
 </style>
