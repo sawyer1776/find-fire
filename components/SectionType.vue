@@ -124,6 +124,9 @@ a {
 	h2 {
 		font-size: 2.75rem;
 	}
+	ul {
+		margin-left: 0rem;
+	}
 	.icon {
 		width: 8rem;
 		height: 8rem;
@@ -132,9 +135,8 @@ a {
 		font-size: 2.75rem;
 	}
 	.arrow {
-		width: 5rem;
-		height: 5rem;
-		color: var(--offwhite);
+		width: 4rem;
+		height: 4rem;
 	}
 }
 @media (min-width: 1090px) {
@@ -144,7 +146,28 @@ a {
 	img {
 		width: 100%;
 		border-radius: 9px;
-		border: 3px solid var(--dark-brown);
+	}
+	h1 {
+		margin: 2rem 8rem;
+	}
+	aside {
+		width: 100%;
+		padding: 0rem 8rem;
+	}
+
+	h2 {
+		font-size: 2.2rem;
+	}
+	.icon {
+		width: 6rem;
+		height: 6rem;
+	}
+	h3 {
+		font-size: 2.2rem;
+	}
+	.arrow {
+		width: 4rem;
+		height: 4rem;
 	}
 }
 </style>

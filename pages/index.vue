@@ -191,6 +191,7 @@ button:active {
 	gap: 4rem;
 	width: 100vw;
 	padding: 1.5rem;
+	background-color: var(--brand-brown);
 }
 
 #services {
@@ -241,17 +242,17 @@ button:active {
 		font-size: 2.4rem;
 	}
 	.section-title {
-		font-size: 6rem;
+		font-size: 4rem;
 
-		padding: 1.5rem 2rem;
+		padding: 1rem 2rem;
 	}
 
 	.heading {
-		font-size: 4.5rem;
+		font-size: 4rem;
 	}
 	button {
-		padding: 1rem 2rem;
-		font-size: 3rem;
+		padding: 0.85rem 1.7rem;
+		font-size: 2.5rem;
 		border-radius: 12px;
 		letter-spacing: 0.1rem;
 		border: 3px solid black;
@@ -263,7 +264,6 @@ button:active {
 		width: 75vw;
 		max-width: 190rem;
 		margin: 0 auto;
-		background-color: var(--brand-brown);
 	}
 	body {
 		background-color: var(--dark-brown);

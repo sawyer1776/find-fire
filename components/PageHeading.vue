@@ -2,17 +2,19 @@
 	<div class="main">
 		<img :src="imgSrc" :alt="altText" />
 		<div class="title">
-			<h1 class="section-title" :class="color">
-				{{ title }}
-			</h1>
+			<div>
+				<h1 class="section-title" :class="color">
+					{{ title }}
+				</h1>
 
-			<h3>
-				{{ subtitle }}
-			</h3>
+				<h3>
+					{{ subtitle }}
+				</h3>
+			</div>
+			<NuxtLink to="#contact" class="button">
+				<button class="wide">Contact</button>
+			</NuxtLink>
 		</div>
-		<NuxtLink to="#contact" class="button">
-			<button class="wide">Contact</button>
-		</NuxtLink>
 	</div>
 </template>
 
@@ -77,6 +79,21 @@ img {
 	}
 	.title {
 		padding: 3rem;
+	}
+}
+
+@media (min-width: 1090px) {
+	img {
+		width: 100%;
+		border-radius: 9px;
+	}
+	.title {
+		display: flex;
+		gap: 4rem;
+	}
+	.button {
+		width: 45%;
+		margin: auto 0;
 	}
 }
 </style>

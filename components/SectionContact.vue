@@ -125,7 +125,6 @@ img {
 	width: 100%;
 	margin-bottom: 1rem;
 	border-radius: 9px;
-	border: 2px solid var(--dark-brown);
 	z-index: 2;
 }
 button {
@@ -220,7 +219,6 @@ form {
 	}
 	img {
 		border-radius: 12px;
-		border: 3px solid var(--dark-brown);
 	}
 	button {
 		font-size: 3.5rem;
