@@ -169,5 +169,30 @@ a {
 		width: 4rem;
 		height: 4rem;
 	}
+
+	ul {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+
+		gap: 3rem;
+		margin-left: 0rem;
+	}
+	li {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+
+		box-shadow: 2px 2px 0px 3px var(--dark-brown);
+
+		gap: 3rem;
+		margin-bottom: 3rem;
+		padding: 1.5rem;
+		width: 22rem;
+		height: 22rem;
+		border-radius: 9px;
+	}
 }
 </style>

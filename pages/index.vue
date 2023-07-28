@@ -262,7 +262,7 @@ button:active {
 @media (min-width: 1090px) {
 	.main-content {
 		width: 75vw;
-		max-width: 190rem;
+		max-width: 125rem;
 		margin: 0 auto;
 	}
 	body {
