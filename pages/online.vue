@@ -10,15 +10,14 @@
 			color="red"
 		/>
 
-		<ColorGradeImg
-			img1="/imgs/online-color3.jpeg"
-			img2="/imgs/online-color4.jpeg"
-		/>
-
 		<SectionDescription
 			color="yellow"
 			title="Color Grade"
 			text="With full cinematic color correction services your project will have the highest quality look and feel specifically customized to the needs of your look and delivery."
+		/>
+		<ColorGradeImg
+			img1="/imgs/online-color3.jpeg"
+			img2="/imgs/online-color4.jpeg"
 		/>
 		<SectionDescription
 			color="orange"
