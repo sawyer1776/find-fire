@@ -8,7 +8,7 @@
 		<div id="services"></div>
 
 		<LazySectionType
-			imgSrc="/imgs/creative-gif.webp"
+			imgSrc="/imgs/creative-gif.gif"
 			title="Creative"
 			subtitle="Do you have an idea? Let us help realize it."
 			color="orange"
@@ -38,7 +38,7 @@
 		<div id="services-online"></div>
 		<LazySectionType
 			class="contact"
-			imgSrc="/imgs/online-gif.webp"
+			imgSrc="/imgs/online-gif.gif"
 			title="Online"
 			subtitle="We Provide the finishing touch"
 			color="red"
