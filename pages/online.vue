@@ -3,7 +3,7 @@
 <template>
 	<main>
 		<PageHeading
-			imgSrc="/imgs/online-gif.webp"
+			imgSrc="/imgs/online-gif.gif"
 			altText="animation of man in edit suite"
 			title="Online"
 			subtitle="We provide that  perfect finishing touch."

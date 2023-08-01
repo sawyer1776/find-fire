@@ -103,6 +103,7 @@ li {
 	gap: 1rem;
 	margin-bottom: 2rem;
 }
+
 ul {
 	margin-left: 1.5rem;
 }
