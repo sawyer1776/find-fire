@@ -3,10 +3,20 @@
 	<section>
 		<div class="contact-container">
 			<h1 class="heading">How Can We Help</h1>
-			<img
-				src="/imgs/contact-img.jpg"
-				alt="image of an office building"
-			/>
+			<picture>
+				<source
+					type="image/webp"
+					srcset="
+						/imgs/contact-img-550w.webp,
+						/imgs/contact-img-362w.webp 362w
+					"
+				/>
+
+				<img
+					src="/imgs/contact-img-550w.jpg"
+					alt="image of an office building"
+				/>
+			</picture>
 			<button
 				v-on:click="setEmailAddr"
 				class="background-white wide"
