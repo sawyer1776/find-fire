@@ -4,11 +4,12 @@
 		style="scroll-behavior: smooth"
 	>
 		<SectionHero />
+
 		<SectionServices />
 		<div id="services"></div>
 
 		<LazySectionType
-			imgSrc="/imgs/creative-gif.gif"
+			imgSrc="/imgs/creative"
 			title="Creative"
 			subtitle="Do you have an idea? Let us help realize it."
 			color="orange"
@@ -21,7 +22,7 @@
 		/>
 		<div id="services-offline"></div>
 		<LazySectionType
-			imgSrc="/imgs/offline-gif.gif"
+			imgSrc="/imgs/offline"
 			title="Offline"
 			subtitle="“Fix it in post” that doesn’t bother us."
 			color="yellow"
@@ -38,7 +39,7 @@
 		<div id="services-online"></div>
 		<LazySectionType
 			class="contact"
-			imgSrc="/imgs/online-gif.gif"
+			imgSrc="/imgs/online"
 			title="Online"
 			subtitle="We Provide the finishing touch"
 			color="red"

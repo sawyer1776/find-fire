@@ -1,6 +1,16 @@
 <template>
 	<div class="main">
-		<img :src="imgSrc" :alt="altText" />
+		<video muted loop autoplay preload="auto">
+			<source
+				:srcset="`${imgSrc}-max.webm 1920w, ${imgSrc}-920w.webm 920w, ${imgSrc}-425w.webm 425w,`"
+				:src="`${imgSrc}-920w.webm`"
+				type="video/webm"
+			/>
+			<source :src="`${imgSrc}-max.mp4`" type="video/mp4" />
+
+			<p>Your browser doesn't support HTML video.</p>
+		</video>
+
 		<div class="title">
 			<div>
 				<h1 class="section-title" :class="color">
@@ -64,7 +74,7 @@ h3 {
 	margin-bottom: 1rem;
 }
 
-img {
+video {
 	margin-top: 1.5rem;
 	width: 100vw;
 }
@@ -83,7 +93,7 @@ img {
 }
 
 @media (min-width: 1090px) {
-	img {
+	video {
 		width: 100%;
 		border-radius: 9px;
 	}

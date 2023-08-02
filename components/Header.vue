@@ -3,7 +3,7 @@
 		<NuxtLink @click="showMenu = false" to="/">
 			<img
 				src="/imgs/logo-transparent-horizontal.png"
-				alt=""
+				alt="link to home"
 			/>
 		</NuxtLink>
 		<div class="right-side">

@@ -1,7 +1,7 @@
 <template>
 	<main>
 		<PageHeading
-			imgSrc="/imgs/creative-gif.gif"
+			imgSrc="/imgs/creative"
 			altText="animation of man drawing at a desk"
 			subtitle="Do you have an idea? Let us help realize it."
 			title="Creative"

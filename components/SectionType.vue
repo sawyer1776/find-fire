@@ -1,6 +1,16 @@
 <template>
 	<section>
-		<img :src="imgSrc" alt="alt texting" />
+		<video muted loop autoplay preload="auto">
+			<source
+				:srcset="`${imgSrc}-max.webm 1920w, ${imgSrc}-920w.webm 920w, ${imgSrc}-425w.webm 425w,`"
+				:src="`${imgSrc}-920w.webm`"
+				type="video/webm"
+			/>
+			<source :src="`${imgSrc}-max.mp4`" type="video/mp4" />
+
+			<p>Your browser doesn't support HTML video.</p>
+		</video>
+
 		<h1 :class="color" class="section-title">
 			{{ title }}
 		</h1>
@@ -55,7 +65,7 @@ h1 {
 	margin: 2rem 1.5rem;
 	align-self: flex-start;
 }
-img {
+video {
 	width: 100vw;
 	/* margin: 0 auto; */
 }
@@ -143,7 +153,7 @@ a {
 	section {
 		width: 100%;
 	}
-	img {
+	video {
 		width: 100%;
 		border-radius: 9px;
 	}

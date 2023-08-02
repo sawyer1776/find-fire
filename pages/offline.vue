@@ -1,7 +1,7 @@
 <template>
 	<main>
 		<PageHeading
-			imgSrc="/imgs/offline-gif.gif"
+			imgSrc="/imgs/offline"
 			altText="animation of man in edit suite"
 			title="Offline"
 			subtitle="“Fix it in post” that doesn’t bother us."
