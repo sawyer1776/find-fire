@@ -1,24 +1,17 @@
 <template style="scroll-behavior: smooth">
 	<div>
-		<head>
-			<title>Find Fire Digital</title>
-			<meta
+		<Head>
+			<Title>Find Fire Digital</Title>
+			<Meta
 				name="description"
-				content="Find Fire Digital is a full service creative & post-house for
-		narrative, commercial, and digital content. We
-		customize to fit your project needs and strive to
-		deliver beyond expectations."
+				content="Find Fire digital is a full service creative & post-house for
+			narrative, commercial, and digital content. We
+			customize to fit your project needs and strive to
+			deliver beyond expectations."
+				keywords="video, production, post, creative, offline, online, color, vfx, sound, music, design, motion, animation, storyboard, animatic, editorial, sound mixing, foley, adr, music, color grade, vfx, mastering, delivery"
 			/>
-			<meta
-				name="keywords"
-				content="Find Fire Digital, post-house, post production, commercial production, digital content, storyboarding, services, creative, narrative, commercial, digital, post production, post house, post-house, posthouse, postproduction, post-production, post production house, post-production house, post productionhouse, post-productionhouse, postproductionhouse, postproduction house, postproduction-house, post-production-house, postproduction-house, postproductionhouse,"
-			/>
-			<meta
-				name="viewport"
-				content="width=device-width, inital-scale=1.0"
-			/>
-			<meta charset="utf-8" />
-		</head>
+		</Head>
+
 		<main
 			class="main-content"
 			style="scroll-behavior: smooth"
@@ -146,6 +139,7 @@ p {
 
 button {
 	font-weight: 800;
+	text-shadow: 1px 1px black;
 	background-color: var(--brand-orange);
 	color: var(--offwhite);
 	padding: 0.75rem 1.5rem;
@@ -193,10 +187,12 @@ button:active {
 .background-white {
 	background-color: var(--offwhite);
 	color: var(--dark-brown);
+	text-shadow: none;
 }
 .background-yellow {
 	background-color: var(--brand-yellow);
 	color: var(--dark-brown);
+	text-shadow: none;
 }
 
 .main-content {
@@ -272,6 +268,7 @@ button:active {
 		border-radius: 12px;
 		letter-spacing: 0.1rem;
 		border: 3px solid black;
+		text-shadow: 2px 2px 0 black;
 	}
 }
 

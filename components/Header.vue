@@ -164,6 +164,7 @@ li:last-child {
 		font-size: 2.4rem;
 		padding: 0.5rem 1rem;
 		box-shadow: 0.4rem 0.4rem 0 var(--dark-brown);
+		text-shadow: 1px 1px 0 black;
 	}
 	button:hover {
 		transform: translate(-0.08rem, -0.08rem);

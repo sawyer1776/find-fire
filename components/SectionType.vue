@@ -26,7 +26,7 @@
 			</ul>
 			<NuxtLink :to="destination">
 				<button>
-					Learn More
+					{{ title }}
 					<Icon
 						class="arrow"
 						name="octicon:arrow-right-16"

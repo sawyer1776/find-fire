@@ -122,6 +122,7 @@ section {
 }
 h1 {
 	color: var(--offwhite);
+	text-shadow: 1px 1px black;
 }
 h3 {
 	color: var(--offwhite);
@@ -216,6 +217,9 @@ form {
 @media (min-width: 550px) {
 	section {
 		max-width: 65rem;
+	}
+	h1 {
+		text-shadow: 2px 2px black;
 	}
 
 	.contact-container {
