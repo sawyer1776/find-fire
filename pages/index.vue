@@ -1,8 +1,8 @@
 <template style="scroll-behavior: smooth">
 	<div>
-		<head>
-			<title>Find Fire Digital</title>
-			<meta
+		<Head>
+			<Title>Find Fire Digital</Title>
+			<Meta
 				name="description"
 				content="Find Fire digital is a full service creative & post-house for
 		narrative, commercial, and digital content. We
@@ -11,7 +11,7 @@
 				keywords="video, production, post, creative, offline, online, color, vfx, sound, music, design, motion, animation, storyboard, animatic, editorial, sound mixing, foley, adr, music, color grade, vfx, mastering, delivery"
 			/>
 			<meta charset="utf-8" />
-		</head>
+		</Head>
 		<main
 			class="main-content"
 			style="scroll-behavior: smooth"
