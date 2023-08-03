@@ -3,6 +3,7 @@
 		<Head>
 			<Title>Find Fire Digital</Title>
 			<Meta
+				lang="en"
 				name="description"
 				content="Find Fire digital is a full service creative & post-house for
 		narrative, commercial, and digital content. We
@@ -10,7 +11,6 @@
 		deliver beyond expectations."
 				keywords="video, production, post, creative, offline, online, color, vfx, sound, music, design, motion, animation, storyboard, animatic, editorial, sound mixing, foley, adr, music, color grade, vfx, mastering, delivery"
 			/>
-			<meta charset="utf-8" />
 		</Head>
 		<main
 			class="main-content"

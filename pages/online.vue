@@ -5,6 +5,7 @@
 		<Head>
 			<Title>Find Fire Digital Online Services</Title>
 			<Meta
+				lang="en"
 				name="description"
 				content="Our Online Services include Color Grade, VFX, Mastering, and Delivery."
 				keywords="video, production, post, creative, offline, online, color, vfx, sound, music, design, motion, animation, storyboard, animatic, editorial, sound mixing, foley, adr, music, color grade, vfx, mastering, delivery"

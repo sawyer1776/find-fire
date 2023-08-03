@@ -3,6 +3,7 @@
 		<Head>
 			<Title>Find Fire Digital Creative Services</Title>
 			<Meta
+				lang="en"
 				name="description"
 				content="Our Creative Services include Design, Motion Design, Storyboarding and Animatics."
 				keywords="video, production, post, creative, offline, online, color, vfx, sound, music, design, motion, animation, storyboard, animatic, editorial, sound mixing, foley, adr, music, color grade, vfx, mastering, delivery"
