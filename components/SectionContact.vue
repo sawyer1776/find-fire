@@ -133,6 +133,7 @@ h3 {
 
 img {
 	width: 100%;
+	height: auto;
 	margin-bottom: 1rem;
 	border-radius: 9px;
 	z-index: 2;

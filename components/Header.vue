@@ -96,6 +96,7 @@ button:active {
 
 img {
 	width: 45vw;
+	height: auto;
 	object-fit: contain;
 }
 .icon {

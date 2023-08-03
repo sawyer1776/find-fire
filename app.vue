@@ -1,12 +1,4 @@
 <template>
-	<title>Find Fire Digital</title>
-	<meta
-		name="description"
-		content="Find Fire Digital is a full service creative & post-house for
-			narrative, commercial, and digital content. We
-			customize to fit your project needs and strive to
-			deliver beyond expectations."
-	/>
 	<Header />
 	<NuxtPage />
 	<Footer />

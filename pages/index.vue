@@ -1,65 +1,80 @@
 <template style="scroll-behavior: smooth">
-	<main
-		class="main-content"
-		style="scroll-behavior: smooth"
-	>
-		<SectionHero />
+	<div>
+		<head>
+			<title>Find Fire Digital</title>
+			<meta
+				name="description"
+				content="Find Fire Digital is a full service creative & post-house for
+		narrative, commercial, and digital content. We
+		customize to fit your project needs and strive to
+		deliver beyond expectations."
+			/>
+			<meta
+				name="keywords"
+				content="Find Fire Digital, post-house, post production, commercial production, digital content, storyboarding, services, creative, narrative, commercial, digital, post production, post house, post-house, posthouse, postproduction, post-production, post production house, post-production house, post productionhouse, post-productionhouse, postproductionhouse, postproduction house, postproduction-house, post-production-house, postproduction-house, postproductionhouse,"
+			/>
+			<meta
+				name="viewport"
+				content="width=device-width, inital-scale=1.0"
+			/>
+			<meta charset="utf-8" />
+		</head>
+		<main
+			class="main-content"
+			style="scroll-behavior: smooth"
+		>
+			<SectionHero />
 
-		<SectionServices />
-		<div id="services"></div>
+			<SectionServices />
+			<div id="services"></div>
 
-		<LazySectionType
-			imgSrc="/imgs/creative"
-			title="Creative"
-			subtitle="Do you have an idea? Let us help realize it."
-			color="orange"
-			:items="[
-				['Design', 'ic:round-draw'],
-				['Motion Design', 'mdi:motion'],
-				['Storyboarding and Animatics', 'bxs:dock-right'],
-			]"
-			destination="/creative"
-		/>
-		<div id="services-offline"></div>
-		<LazySectionType
-			imgSrc="/imgs/offline"
-			title="Offline"
-			subtitle="“Fix it in post” that doesn’t bother us."
-			color="yellow"
-			:items="[
-				['Editorial', 'icomoon-free:film'],
-				[
-					'Sound Mixing, Foley, ADR',
-					'fluent:mic-pulse-48-filled',
-				],
-				['Music', 'game-icons:piano-keys'],
-			]"
-			destination="/offline"
-		/>
-		<div id="services-online"></div>
-		<LazySectionType
-			class="contact"
-			imgSrc="/imgs/online"
-			title="Online"
-			subtitle="We Provide the finishing touch"
-			color="red"
-			:items="[
-				['Color Grade', 'icon-park-solid:color-filter'],
-				['VFX', 'fa6-solid:explosion'],
-				['Mastering & Delivery', 'fontisto:film'],
-			]"
-			destination="/online"
-		/>
-		<SectionContact />
-
-		<!-- Services Section -->
-		<!-- Service Section -->
-		<!-- Contact Section -->
-	</main>
+			<LazySectionType
+				imgSrc="/imgs/creative"
+				title="Creative"
+				subtitle="Do you have an idea? Let us help realize it."
+				color="orange"
+				:items="[
+					['Design', 'ic:round-draw'],
+					['Motion Design', 'mdi:motion'],
+					['Storyboarding and Animatics', 'bxs:dock-right'],
+				]"
+				destination="/creative"
+			/>
+			<div id="services-offline"></div>
+			<LazySectionType
+				imgSrc="/imgs/offline"
+				title="Offline"
+				subtitle="“Fix it in post” that doesn’t bother us."
+				color="yellow"
+				:items="[
+					['Editorial', 'icomoon-free:film'],
+					[
+						'Sound Mixing, Foley, ADR',
+						'fluent:mic-pulse-48-filled',
+					],
+					['Music', 'game-icons:piano-keys'],
+				]"
+				destination="/offline"
+			/>
+			<div id="services-online"></div>
+			<LazySectionType
+				class="contact"
+				imgSrc="/imgs/online"
+				title="Online"
+				subtitle="We Provide the finishing touch"
+				color="red"
+				:items="[
+					['Color Grade', 'icon-park-solid:color-filter'],
+					['VFX', 'fa6-solid:explosion'],
+					['Mastering & Delivery', 'fontisto:film'],
+				]"
+				destination="/online"
+			/>
+			<SectionContact />
+		</main>
+	</div>
 </template>
 <script>
-// const appConfig = useAppConfig();
-
 definePageMeta({
 	pageTransition: {
 		name: 'page',
