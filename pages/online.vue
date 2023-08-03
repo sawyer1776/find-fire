@@ -79,7 +79,7 @@ main {
 	max-width: 85rem;
 	padding: 0 1.5rem;
 	overflow-x: visable;
-	background-color: var(--brand-brown);
+	background-color: var(--dark-brown);
 }
 button {
 	display: flex;
@@ -118,7 +118,7 @@ button {
 
 @media (min-width: 1090px) {
 	main {
-		background-color: var(--brand-brown);
+		background-color: var(--dark-brown);
 		width: 75vw;
 		max-width: 190rem;
 		padding: 0 7.5rem;
