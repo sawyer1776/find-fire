@@ -2,7 +2,7 @@
 	<section>
 		<video muted loop autoplay preload="auto">
 			<source
-				:srcset="`${imgSrc}-max.webm 1920w, ${imgSrc}-920w.webm 920w, ${imgSrc}-425w.webm 425w,`"
+				:srcset="`${imgSrc}-920w.webm 920w, ${imgSrc}-425w.webm 425w,`"
 				:src="`${imgSrc}-920w.webm`"
 				type="video/webm"
 			/>
@@ -26,7 +26,7 @@
 			</ul>
 			<NuxtLink :to="destination">
 				<button>
-					Learn More
+					{{ title }}
 					<Icon
 						class="arrow"
 						name="octicon:arrow-right-16"

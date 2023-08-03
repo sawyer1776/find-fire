@@ -99,7 +99,7 @@ html {
 }
 
 body {
-	background-color: var(--brand-brown);
+	background-color: var(--dark-brown);
 	font-family: 'Open Sans', sans-serif;
 	overflow-x: hidden;
 	line-height: 1;
@@ -166,7 +166,7 @@ button:active {
 	font-size: 2.75rem;
 	line-height: 1.25;
 	padding: 0.75rem 1rem;
-	background-color: var(--dark-brown);
+	/* background-color: var(--dark-brown); */
 	width: fit-content;
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
@@ -200,7 +200,7 @@ button:active {
 	gap: 4rem;
 	width: 100vw;
 	padding: 1.5rem;
-	background-color: var(--brand-brown);
+	background-color: var(--dark-brown);
 }
 
 #services {
@@ -275,7 +275,7 @@ button:active {
 		margin: 0 auto;
 	}
 	body {
-		background-color: var(--dark-brown);
+		background-color: var(--brand-brown);
 	}
 }
 </style>

@@ -24,7 +24,7 @@
 
 <style scoped>
 footer {
-	background-color: var(--dark-brown);
+	background-color: var(--brand-brown);
 	width: 100%;
 	color: var(--light-grey);
 	display: flex;

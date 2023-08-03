@@ -2,7 +2,7 @@
 	<div class="main">
 		<video muted loop autoplay preload="auto">
 			<source
-				:srcset="`${imgSrc}-max.webm 1920w, ${imgSrc}-920w.webm 920w, ${imgSrc}-425w.webm 425w,`"
+				:srcset="` ${imgSrc}-920w.webm 920w, ${imgSrc}-425w.webm 425w,`"
 				:src="`${imgSrc}-920w.webm`"
 				type="video/webm"
 			/>
@@ -58,7 +58,7 @@ export default {
 
 .title {
 	width: 100%;
-	background-color: var(--dark-brown);
+	background-color: var(--brand-brown);
 	padding: 1.5rem;
 }
 h3 {

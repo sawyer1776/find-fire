@@ -6,11 +6,11 @@
 				sizes="(min-width: 1090px) 100vw, 50vw"
 				srcset="
 					../public/imgs/logo-virtical-750w.webp    750w,
-					../public/imgs/logo-horizontal-1120w.webp
+					../public/imgs/logo-horizontal-1600w.webp
 				"
 			/>
 			<img
-				src="../public/imgs/logo-virtical-750w.webp"
+				src="../public/imgs/logo-virtical-750w.png"
 				alt="logo of a man dancing in front of a fire"
 			/>
 		</picture>
@@ -50,7 +50,7 @@ section {
 }
 img {
 	width: 100vw;
-	aspect-ratio: 9/16;
+	aspect-ratio: 29/40;
 	max-width: 75rem;
 	object-fit: contain;
 }
@@ -68,7 +68,7 @@ img {
 		gap: 20rem;
 	}
 	img {
-		aspect-ratio: 16/9;
+		aspect-ratio: 21/5;
 		margin-top: 8rem;
 		width: 100%;
 		height: auto;
