@@ -5,9 +5,9 @@
 			<Meta
 				name="description"
 				content="Find Fire digital is a full service creative & post-house for
-			narrative, commercial, and digital content. We
-			customize to fit your project needs and strive to
-			deliver beyond expectations."
+		narrative, commercial, and digital content. We
+		customize to fit your project needs and strive to
+		deliver beyond expectations."
 				keywords="video, production, post, creative, offline, online, color, vfx, sound, music, design, motion, animation, storyboard, animatic, editorial, sound mixing, foley, adr, music, color grade, vfx, mastering, delivery"
 			/>
 		</Head>
@@ -187,12 +187,10 @@ button:active {
 .background-white {
 	background-color: var(--offwhite);
 	color: var(--dark-brown);
-	text-shadow: none;
 }
 .background-yellow {
 	background-color: var(--brand-yellow);
 	color: var(--dark-brown);
-	text-shadow: none;
 }
 
 .main-content {
@@ -268,7 +266,6 @@ button:active {
 		border-radius: 12px;
 		letter-spacing: 0.1rem;
 		border: 3px solid black;
-		text-shadow: 2px 2px 0 black;
 	}
 }
 
