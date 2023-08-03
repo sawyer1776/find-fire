@@ -9,7 +9,10 @@
 					../public/imgs/logo-horizontal-1120w.webp
 				"
 			/>
-			<img src="../public/imgs/logo-virtical-750w.webp" />
+			<img
+				src="../public/imgs/logo-virtical-750w.webp"
+				alt="logo of a man dancing in front of a fire"
+			/>
 		</picture>
 
 		<div class="video">
@@ -19,21 +22,21 @@
 </template>
 
 <script>
-export default {
-	data() {
-		landscape: false;
-	},
-	beforeMount() {
-		let width = window.innerWidth;
-		let height = window.innerHeight;
-		console.log(width, height);
-		if (width >= height) {
-			this.landscape = true;
-		} else {
-			this.landscape = false;
-		}
-	},
-};
+// export default {
+// 	data() {
+// 		landscape: false;
+// 	},
+// 	beforeMount() {
+// 		let width = window.innerWidth;
+// 		let height = window.innerHeight;
+// 		console.log(width, height);
+// 		if (width >= height) {
+// 			this.landscape = true;
+// 		} else {
+// 			this.landscape = false;
+// 		}
+// 	},
+// };
 </script>
 
 <style scoped>
@@ -47,8 +50,8 @@ section {
 }
 img {
 	width: 100vw;
+	aspect-ratio: 9/16;
 	max-width: 75rem;
-
 	object-fit: contain;
 }
 
@@ -65,8 +68,10 @@ img {
 		gap: 20rem;
 	}
 	img {
+		aspect-ratio: 16/9;
 		margin-top: 8rem;
 		width: 100%;
+		height: auto;
 		max-width: 112rem;
 	}
 	.video {

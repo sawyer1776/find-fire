@@ -34,24 +34,24 @@ footer {
 }
 
 h2 {
-	font-size: 1.8rem;
+	font-size: 2.4rem;
 	font-weight: 800;
 	letter-spacing: 0.05rem;
 	text-transform: uppercase;
 }
 p {
-	font-size: 1.8rem;
+	font-size: 2.4rem;
 }
 ul {
 	display: flex;
 	flex-direction: column;
-	gap: 0.75rem;
+	gap: 2.5rem;
 	border-bottom: 2px solid var(--light-grey);
 	padding-bottom: 1rem;
 }
 
 a {
-	font-size: 1.8rem;
+	font-size: 2.4rem;
 	color: var(--light-grey);
 	font-weight: 300;
 }
