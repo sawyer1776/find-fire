@@ -151,6 +151,7 @@ button {
 	box-shadow: 0.6rem 0.5rem 0 black;
 	transition: all 20ms;
 	cursor: pointer;
+	text-shadow: 1px 1px 0 black;
 }
 button:hover {
 	transform: translate(-0.1rem, -0.1rem);
@@ -186,10 +187,12 @@ button:active {
 .background-white {
 	background-color: var(--offwhite);
 	color: var(--dark-brown);
+	text-shadow: none;
 }
 .background-yellow {
 	background-color: var(--brand-yellow);
 	color: var(--dark-brown);
+	text-shadow: none;
 }
 
 .main-content {
@@ -265,6 +268,7 @@ button:active {
 		border-radius: 12px;
 		letter-spacing: 0.1rem;
 		border: 3px solid black;
+		text-shadow: 2px 2px 0 black;
 	}
 }
 

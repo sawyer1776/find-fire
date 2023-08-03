@@ -83,6 +83,7 @@ button {
 	font-size: 1.2rem;
 	padding: 0.5rem 1rem;
 	box-shadow: 0.3rem 0.3rem 0 var(--dark-brown);
+	text-shadow: 1px 1px 0 black;
 }
 button:hover {
 	transform: translate(-0.05rem, -0.05rem);
@@ -159,6 +160,7 @@ li:last-child {
 	}
 	img {
 		width: 28rem;
+		height: auto;
 	}
 	button {
 		font-size: 2.4rem;

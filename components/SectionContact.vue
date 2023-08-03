@@ -122,6 +122,7 @@ section {
 }
 h1 {
 	color: var(--offwhite);
+	text-shadow: 1px 1px 0 black;
 }
 h3 {
 	color: var(--offwhite);
@@ -225,6 +226,10 @@ form {
 		padding-bottom: 9rem;
 		box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.25);
 	}
+	h1 {
+		text-shadow: 2px 2px 0 black;
+	}
+
 	h3 {
 		font-size: 3.5rem;
 	}
