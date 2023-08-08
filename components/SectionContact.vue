@@ -158,6 +158,7 @@ export default {
 	},
 	methods: {
 		encode(data) {
+			console.log('Axios Data', data);
 			return Object.keys(data)
 				.map(
 					(key) =>
@@ -191,7 +192,10 @@ export default {
 					'/',
 					this.encode({
 						'form-name': 'contact',
-						...this.form,
+						name: this.name,
+						email: this.email,
+						phone: this.phone,
+						message: this.message,
 					}),
 					axiosConfig
 				);
