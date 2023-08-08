@@ -31,7 +31,7 @@
 					</h3>
 					<form
 						name="contact"
-						method="post"
+						method="POST"
 						data-netlify="true"
 						data-netlify-honeypot="bot-field"
 						@submit.prevent="submitForm"
@@ -112,7 +112,10 @@
 							id="message"
 							placeholder="Message"
 						/>
-						<button class="background-white narrow submit">
+						<button
+							type="submit"
+							class="background-white narrow submit"
+						>
 							Submit
 						</button>
 					</form>
