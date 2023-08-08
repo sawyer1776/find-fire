@@ -156,6 +156,16 @@ export default {
 		};
 	},
 	methods: {
+		encode(data) {
+			return Object.keys(data)
+				.map(
+					(key) =>
+						`${encodeURIComponent(
+							key
+						)}=${encodeURIComponent(data[key])}`
+				)
+				.join('&');
+		},
 		setEmailAddr() {
 			this.emailAddr =
 				'contact' + '@find' + 'firedigital.com';
@@ -170,6 +180,21 @@ export default {
 				this.nameIsValid === 'valid' &&
 				this.emailIsValid === 'valid'
 			) {
+				const axiosConfig = {
+					header: {
+						'Content-Type':
+							'application/x-www-form-urlencoded',
+					},
+				};
+				axios.post(
+					'/',
+					this.encode({
+						'form-name': 'contact',
+						...this.form,
+					}),
+					axiosConfig
+				);
+
 				this.formSubmitted = true;
 				this.showMessage = false;
 
