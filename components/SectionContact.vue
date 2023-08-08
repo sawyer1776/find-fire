@@ -24,42 +24,99 @@
 				Send Us A Message
 			</button>
 			<transition>
-				<form v-if="showMessage">
-					<h3>Email us at</h3>
-					<h3>{{ emailAddr }}</h3>
-					<h3>OR</h3>
-
-					<input
-						class="input"
-						type="text"
-						name="name"
-						id="name"
-						placeholder="Name"
-					/>
-					<input
-						class="input"
-						type="email"
-						name="email"
-						id="email"
-						placeholder="Email"
-					/>
-					<input
-						class="input"
-						type="tel"
-						name="phone"
-						id="phone"
-						placeholder="Phone"
-					/>
-					<textarea
-						class="input"
-						name="message"
-						id="message"
-						placeholder="Message"
-					/>
-					<button class="background-white narrow submit">
-						Submit
-					</button>
-				</form>
+				<div>
+					<h3 v-if="formSubmitted">
+						Form Submitted! Thanks for reaching out, someone
+						will be in touch shortly.
+					</h3>
+					<form
+						name="contact"
+						method="post"
+						data-netlify="true"
+						data-netlify-honeypot="bot-field"
+						@submit.prevent="submitForm"
+						v-if="showMessage"
+					>
+						<input
+							type="hidden"
+							name="form-name"
+							value="contact"
+						/>
+						<h3>Email us at</h3>
+						<h3>{{ emailAddr }}</h3>
+						<h3>OR</h3>
+						<p
+							class="warning"
+							v-if="nameIsValid === 'invalid'"
+						>
+							Please enter your name
+						</p>
+						<input
+							v-model.trim="name"
+							class="input"
+							:class="{
+								invalid: nameIsValid === 'invalid',
+							}"
+							type="text"
+							name="name"
+							id="name"
+							placeholder="Name"
+							maxlength="60"
+							@blur="validateName"
+						/>
+						<p
+							class="warning"
+							v-if="emailIsValid === 'invalid'"
+						>
+							Please enter a valid email
+						</p>
+						<input
+							v-model.trim="email"
+							class="input"
+							:class="{
+								invalid: emailIsValid === 'invalid',
+							}"
+							type="email"
+							name="email"
+							id="email"
+							placeholder="Email"
+							maxlength="254"
+							@blur="validateEmail"
+							@input="checkToValidateEmail"
+						/>
+						<p
+							class="warning"
+							v-if="phoneIsValid === 'invalid'"
+						>
+							Please enter 10 digit phone number or include
+							a country code if outside of the USA
+						</p>
+						<input
+							@input="formatPhone"
+							v-model.trim="phone"
+							class="input"
+							:class="{
+								invalid: phoneIsValid === 'invalid',
+							}"
+							type="tel"
+							name="phone"
+							id="phone"
+							placeholder="Phone"
+							maxlength="14"
+							@blur="validatePhone"
+						/>
+						<textarea
+							v-model="message"
+							class="input"
+							name="message"
+							id="message"
+							placeholder="Message"
+						/>
+						<button class="background-white narrow submit">
+							Submit
+						</button>
+					</form>
+				</div>
 			</transition>
 			<button
 				v-on:click="setPhone"
@@ -84,7 +141,15 @@ export default {
 			emailAddr: '',
 			phoneNumber: '',
 			showMessage: false,
+			formSubmitted: false,
 			showPhone: false,
+			name: '',
+			email: '',
+			phone: '',
+			message: '',
+			emailIsValid: 'pending',
+			phoneIsValid: 'pending',
+			nameIsValid: 'pending',
 		};
 	},
 	methods: {
@@ -96,6 +161,85 @@ export default {
 		setPhone() {
 			this.phoneNumber = '(123) ' + '456-' + '7890';
 			this.showPhone = !this.showPhone;
+		},
+		submitForm() {
+			if (
+				this.nameIsValid === 'valid' &&
+				this.emailIsValid === 'valid'
+			) {
+				this.formSubmitted = true;
+				this.showMessage = false;
+
+				console.log('Form submitted!');
+				console.log(this.name);
+				console.log(this.email);
+				console.log(this.phone);
+				console.log(this.message);
+
+				this.name = '';
+				this.email = '';
+				this.phone = '';
+				this.message = '';
+				this.emailIsValid = 'pending';
+				this.phoneIsValid = 'pending';
+				this.nameIsValid = 'pending';
+			} else return;
+		},
+		validateName() {
+			console.log('Name Blur Event');
+			if (this.name.length < 1) {
+				this.nameIsValid = 'invalid';
+			} else {
+				this.nameIsValid = 'valid';
+			}
+		},
+		validateEmail() {
+			if (
+				/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(
+					this.email
+				)
+			) {
+				this.emailIsValid = 'valid';
+			} else {
+				this.emailIsValid = 'invalid';
+			}
+		},
+		validatePhone() {
+			if (this.phone.length < 14) {
+				this.phoneIsValid = 'invalid';
+			} else {
+				this.phoneIsValid = 'valid';
+			}
+		},
+		formatPhone() {
+			if (this.phoneIsValid === 'invalid') {
+				this.validatePhone();
+			}
+			const tempNumber = this.phone.replace(/[^\d]/g, '');
+			if (tempNumber.length <= 3) {
+				this.phone = tempNumber;
+			}
+			if (tempNumber.length > 3 && tempNumber.length < 7) {
+				this.phone =
+					'(' +
+					tempNumber.slice(0, 3) +
+					') ' +
+					tempNumber.slice(3);
+			}
+			if (tempNumber.length >= 7) {
+				this.phone =
+					'(' +
+					tempNumber.slice(0, 3) +
+					') ' +
+					tempNumber.slice(3, 6) +
+					'-' +
+					tempNumber.slice(6, 10);
+			}
+		},
+		checkToValidateEmail() {
+			if (this.emailIsValid === 'invalid') {
+				this.validateEmail();
+			}
 		},
 	},
 };
@@ -192,6 +336,15 @@ form {
 	border-radius: 9px;
 	border-top-left-radius: 0px;
 	border-top-right-radius: 0px;
+}
+
+.warning {
+	font-size: 2rem;
+	font-weight: 600;
+}
+
+.invalid {
+	border: 5px solid red;
 }
 
 #contact {

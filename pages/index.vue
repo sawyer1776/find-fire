@@ -107,6 +107,14 @@ body {
 	/* position: relative; */
 }
 
+.details div.row{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1rem;
+}
+
 a {
 	text-decoration: none;
 }
