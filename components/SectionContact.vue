@@ -158,7 +158,6 @@ export default {
 	},
 	methods: {
 		encode(data) {
-			console.log('Axios Data', data);
 			return Object.keys(data)
 				.map(
 					(key) =>
@@ -203,12 +202,6 @@ export default {
 				this.formSubmitted = true;
 				this.showMessage = false;
 
-				console.log('Form submitted!');
-				console.log(this.name);
-				console.log(this.email);
-				console.log(this.phone);
-				console.log(this.message);
-
 				this.name = '';
 				this.email = '';
 				this.phone = '';
@@ -219,7 +212,6 @@ export default {
 			} else return;
 		},
 		validateName() {
-			console.log('Name Blur Event');
 			if (this.name.length < 1) {
 				this.nameIsValid = 'invalid';
 			} else {
