@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 
 <body>
-  <form hidden name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" ">
-    
-    <input type=" hidden" name="form-name" value="contact" />
-  <input class="input" type="text" name="name" id="name" placeholder="Name" maxlength="60" />
-  <input class="input" type="email" name="email" id="email" placeholder="Email" maxlength="254" />
-  <input class="input" type="tel" name="phone" id="phone" placeholder="Phone" maxlength="14" />
-  <textarea v-model="message" class="input" name="message" id="message" placeholder="Message" />
-  <button type="submit" class="background-white narrow submit"> Submit </button>
+  <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
+    <input type="hidden" name="form-name" value="contact" />
+    <input class="input" type="text" name="name" id="name" placeholder="Name" maxlength="60" />
+    <input class="input" type="email" name="email" id="email" placeholder="Email" maxlength="254" />
+    <input class="input" type="tel" name="phone" id="phone" placeholder="Phone" maxlength="14" />
+    <textarea v-model="message" class="input" name="message" id="message" placeholder="Message" />
+    <button type="submit" class="background-white narrow submit"> Submit </button>
   </form>
 </body>
 
