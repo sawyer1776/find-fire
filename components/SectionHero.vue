@@ -14,34 +14,12 @@
 				alt="logo of a man dancing in front of a fire"
 			/>
 		</picture>
-
-		<div class="video">
-			<h1>Motivator Video</h1>
-		</div>
+		<MotivatorVideo />
 	</section>
 </template>
 
-<script>
-// export default {
-// 	data() {
-// 		landscape: false;
-// 	},
-// 	beforeMount() {
-// 		let width = window.innerWidth;
-// 		let height = window.innerHeight;
-// 		console.log(width, height);
-// 		if (width >= height) {
-// 			this.landscape = true;
-// 		} else {
-// 			this.landscape = false;
-// 		}
-// 	},
-// };
-</script>
-
 <style scoped>
 section {
-	/* margin-top: rem; */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -55,28 +33,22 @@ img {
 	object-fit: contain;
 }
 
-.video {
-	width: 100vw;
-	height: 56.25vw;
-	background-color: grey;
-}
-
 @media (min-width: 1090px) {
 	section {
 		width: 100%;
-		padding: 5rem;
 		gap: 20rem;
 	}
+	picture {
+		padding: 5rem;
+	}
+
 	img {
 		aspect-ratio: 21/5;
 		margin-top: 8rem;
 		width: 100%;
+
 		height: auto;
 		max-width: 112rem;
-	}
-	.video {
-		width: 100%;
-		height: 40vw;
 	}
 }
 </style>

@@ -139,6 +139,7 @@
 </template>
 <script>
 import axios from 'axios';
+
 export default {
 	data() {
 		return {
@@ -209,7 +210,12 @@ export default {
 				this.emailIsValid = 'pending';
 				this.phoneIsValid = 'pending';
 				this.nameIsValid = 'pending';
-			} else return;
+			} else {
+				this.validateName();
+				this.validateEmail();
+				getElementById('contact').focus();
+				console.log(getElementById('contact'));
+			}
 		},
 		validateName() {
 			if (this.name.length < 1) {
