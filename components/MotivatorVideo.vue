@@ -1,9 +1,6 @@
 <template>
 	<video muted autoplay loop>
-		<source
-			src="../imgs/motivator.webm"
-			type="video/webm"
-		/>
+		<source src="/imgs/motivator.webm" type="video/webm" />
 	</video>
 </template>
 
