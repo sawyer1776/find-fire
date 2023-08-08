@@ -1,12 +1,8 @@
 <template>
 	<video muted autoplay loop>
 		<source
-			src="https://downloads.blackmagicdesign.com/videos/products/davinciresolve/landing/hero/20230406-rohsri/hero.hd.1080p.mp4"
-			type="video/mp4"
-		/>
-		<source
-			src="https://downloads.blackmagicdesign.com/videos/products/davinciresolve/landing/hero/20230406-rohsri/hero.hd.720p.mp4"
-			type="video/mp4"
+			src="../imgs/motivator.webm"
+			type="video/webm"
 		/>
 	</video>
 </template>
