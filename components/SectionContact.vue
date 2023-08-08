@@ -49,7 +49,7 @@
 							class="warning"
 							v-if="nameIsValid === 'invalid'"
 						>
-							Please enter your name
+							Please enter your name.
 						</p>
 						<input
 							v-model.trim="name"
