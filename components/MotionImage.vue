@@ -17,6 +17,8 @@
 video {
 	border-radius: 9px;
 	width: 100%;
+	margin-top: -5rem;
+	margin-bottom: 5rem;
 }
 @media (min-width: 550px) {
 	video {
@@ -28,6 +30,8 @@ video {
 	video {
 		max-width: calc(100% - 20rem);
 		/* Matching 10rem padding section Description */
+		margin-bottom: 3rem;
+		margin-top: -3rem;
 	}
 }
 </style>
