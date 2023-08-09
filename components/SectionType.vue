@@ -1,11 +1,11 @@
 <template>
 	<section>
 		<video muted loop playsinline autoplay preload="auto">
-			<source
+			<!-- <source
 				:srcset="`${imgSrc}-920w.webm 920w, ${imgSrc}-425w.webm 425w,`"
 				:src="`${imgSrc}-920w.webm`"
 				type="video/webm"
-			/>
+			/> -->
 			<source :src="`${imgSrc}-max.mp4`" type="video/mp4" />
 
 			<p>Your browser doesn't support HTML video.</p>
