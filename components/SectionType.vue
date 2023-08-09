@@ -1,6 +1,6 @@
 <template>
 	<section>
-		<video muted loop playsinline autoplay preload="auto">
+		<video muted loop playsinline autoplay>
 			<!-- <source
 				:srcset="`${imgSrc}-920w.webm 920w, ${imgSrc}-425w.webm 425w,`"
 				:src="`${imgSrc}-920w.webm`"
@@ -59,9 +59,9 @@ export default {
 		},
 	},
 
-	mounted() {
-		this.playVideo();
-	},
+	// mounted() {
+	// 	this.playVideo();
+	// },
 };
 </script>
 
