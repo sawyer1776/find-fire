@@ -70,6 +70,9 @@ button {
 	align-items: center;
 	justify-content: center;
 }
+main {
+	overflow: hidden;
+}
 .icon {
 	width: 2.5rem;
 	height: 2.5rem;

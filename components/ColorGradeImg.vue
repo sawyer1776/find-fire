@@ -59,18 +59,19 @@ export default {
 		dragSlider(event) {
 			event.target.closest('.imageSplit').offsetWidth;
 			this.isDragging = true;
+
 			let tempPosition =
 				100 -
 				event.touches[0].clientX /
 					(event.target.closest('.imageSplit').offsetWidth *
 						0.01);
-			if (tempPosition >= 100) {
-				this.position = 99;
+			if (tempPosition >= 96) {
+				this.position = 95;
 			}
-			if (tempPosition <= 0) {
-				this.position = 1;
+			if (tempPosition <= 4) {
+				this.position = 5;
 			}
-			if (tempPosition > 0 && tempPosition < 99) {
+			if (tempPosition > 4 && tempPosition < 96) {
 				this.position = tempPosition;
 			}
 		},
@@ -78,19 +79,28 @@ export default {
 			if (this.clickStart === true) {
 				this.isDragging = true;
 
+				console.log('event ', event);
+				console.log('event ', event.x);
+				console.log('window width', window.innerWidth);
+				let offsetVar =
+					(window.innerWidth -
+						event.target.closest('.imageSplit')
+							.offsetWidth) /
+					2;
 				let tempPosition =
 					100 -
-					event.x /
+					(event.x - offsetVar) /
 						(event.target.closest('.imageSplit')
 							.offsetWidth *
 							0.01);
-				if (tempPosition >= 100) {
-					this.position = 99;
+
+				if (tempPosition >= 96) {
+					this.position = 95;
 				}
-				if (tempPosition <= 0) {
-					this.position = 1;
+				if (tempPosition <= 4) {
+					this.position = 5;
 				}
-				if (tempPosition > 0 && tempPosition < 99) {
+				if (tempPosition > 4 && tempPosition < 96) {
 					this.position = tempPosition;
 				}
 			}
