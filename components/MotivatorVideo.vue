@@ -5,7 +5,7 @@
 				/imgs/creative-920w.webm 920w,
 				/imgs/creative-425w.webm 425w
 			"
-			src="/imgs/creative-920w.webm"
+			src="/imgs/videos/motivator-920w.webm"
 			type="video/webm"
 		/>
 		<source src="/imgs/creative-max.mp4" type="video/mp4" />
