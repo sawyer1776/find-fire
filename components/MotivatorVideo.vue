@@ -12,7 +12,7 @@
 
 		<p>Your browser doesn't support HTML video.</p>
 	</video> -->
-	<video muted loop autoplay playsinline>
+	<video muted loop autoPlay playsInline preload="auto">
 		<!-- <source
 			srcset="
 				/imgs/videos/motivator-920w.webm 920w,

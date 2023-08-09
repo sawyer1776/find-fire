@@ -1,6 +1,6 @@
 <template>
 	<div class="main">
-		<video muted loop autoplay preload="auto">
+		<video muted loop autoplay playsInline preload="auto">
 			<source
 				:srcset="` ${imgSrc}-920w.webm 920w, ${imgSrc}-425w.webm 425w,`"
 				:src="`${imgSrc}-920w.webm`"
