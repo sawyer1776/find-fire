@@ -1,13 +1,23 @@
 <template>
-	<video
-		muted="true"
-		loop="true"
-		autoplay="true"
-		preload="auto"
-		playsinline="true"
-	>
-		<source src="/imgs/motivator.webm" type="video/webm" />
+	<video muted loop autoplay playsinline preload="auto">
+		<source
+			srcset="
+				/imgs/videos/motivator-920w.webm 920w,
+				/imgs/videos/motivator-425w.webm 425w
+			"
+			src="/imgs/videos/motivator-920w.webm"
+			type="video/webm"
+		/>
+		<source
+			src="/imgs/videos/motivator-1920.mp4"
+			type="video/mp4"
+		/>
+
+		<p>Your browser doesn't support HTML video.</p>
 	</video>
+	<!-- <video muted loop autoplay preload="auto" playsinline>
+		<source src="/imgs/motivator.webm" type="video/webm" />
+	</video> -->
 </template>
 
 <style scoped>
