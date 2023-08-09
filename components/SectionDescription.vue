@@ -33,7 +33,7 @@ article {
 	gap: 2rem;
 	margin-bottom: 0rem;
 	padding-bottom: 5rem;
-	border-bottom: 2px solid var(--grey);
+	/* border-bottom: 2px solid var(--grey); */
 }
 img {
 	width: 100%;

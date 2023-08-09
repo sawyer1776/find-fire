@@ -21,21 +21,21 @@
 
 			<SectionDescription
 				color="orange"
-				imgSrc="/imgs/offline-editorial.jpg"
+				imgSrc="/imgs/offline-editorial.webp"
 				altText="screenshot of a timeline in an editing software image shows men on camels in front of a truck"
 				title="Editorial"
 				text="A team of editors to organize, cut , manage , and assemble the pieces of each project to bring to life every vision."
 			/>
 			<SectionDescription
 				color="yellow"
-				imgSrc="/imgs/offline-sound.jpg"
+				imgSrc="/imgs/offline-sound.webp"
 				altText="A man and woman singing in a recording booth"
 				title="Sound Mixing, Foley, ADR"
 				text="Providing finish audio sweetening, advanced dialogue replacement services, and full foley service, allow us to help clean up, record, and create your audio tracks, with a full support of tools and resources to build the entire projects soundtracks."
 			/>
 			<SectionDescription
 				color="red"
-				imgSrc="/imgs/offline-music.jpeg"
+				imgSrc="/imgs/offline-music.webp"
 				altText="Man infront of a sound panel"
 				title="Music"
 				text="From custom composing from award winning composers and live instrument recording, or simple digital  track creation our team has the background and talents to immerse your projects with the perfect music to tell your story and set your mood."

@@ -27,19 +27,19 @@
 				text="With full cinematic color correction services your project will have the highest quality look and feel specifically customized to the needs of your look and delivery."
 			/>
 			<ColorGradeImg
-				img1="/imgs/online-color3.jpeg"
-				img2="/imgs/online-color4.jpeg"
+				img1="/imgs/online-color3.webp"
+				img2="/imgs/online-color4.webp"
 			/>
 			<SectionDescription
 				color="orange"
-				imgSrc="/imgs/online-vfx.png"
+				imgSrc="/imgs/online-vfx.webp"
 				altText="cut out image of an explosion"
 				title="VFX"
 				text="Flame, After Effects, Maya, 3D motion capture and more! Require visual  effects for your project? Allow us to service those needs for you.  Who doesn’t like a fun explosion?"
 			/>
 			<SectionDescription
 				color="red"
-				imgSrc="/imgs/online-mastering.jpeg"
+				imgSrc="/imgs/online-mastering.webp"
 				altText="NEED NEW IMG"
 				title="Mastering & Delivery"
 				text="You’ve crossed the finish line of your project but need those last few mastering and export layout passes in order to get your project delivered. Allow our team to organize that work load for you, organize  the deliverables, and ensure all deadlines and needs are met. 
