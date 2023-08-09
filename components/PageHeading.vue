@@ -51,13 +51,18 @@ export default {
 }
 
 .button {
+	margin-top: 1rem;
 	width: 100%;
-	padding: 0 4rem;
+	padding: 0 2rem;
 	max-width: 60rem;
+	align-self: center;
 }
 
 .title {
 	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
 	background-color: var(--brand-brown);
 	padding: 1.5rem;
 }
@@ -100,6 +105,8 @@ video {
 	.title {
 		display: flex;
 		gap: 4rem;
+		max-width: calc(100% - 20rem);
+		/* matching up with 10rem padding on SectionDescription  */
 	}
 	.button {
 		width: 45%;

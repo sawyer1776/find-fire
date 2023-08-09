@@ -107,7 +107,7 @@ body {
 	/* position: relative; */
 }
 
-.details div.row{
+.details div.row {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -174,7 +174,7 @@ button:active {
 .section-title {
 	font-size: 2.75rem;
 	line-height: 1.25;
-	padding: 0.75rem 1rem;
+	padding: 0.75rem 0rem;
 	/* background-color: var(--dark-brown); */
 	width: fit-content;
 	text-transform: uppercase;
@@ -263,8 +263,6 @@ button:active {
 	}
 	.section-title {
 		font-size: 4rem;
-
-		padding: 1rem 2rem;
 	}
 
 	.heading {

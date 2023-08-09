@@ -1,20 +1,20 @@
 <template>
 	<section>
 		<video muted loop playsInline autoPlay preload="auto">
-			<!-- <source
+			<source
 				:srcset="`${imgSrc}-920w.webm 920w, ${imgSrc}-425w.webm 425w,`"
 				:src="`${imgSrc}-920w.webm`"
 				type="video/webm"
-			/> -->
+			/>
 			<source :src="`${imgSrc}-max.mp4`" type="video/mp4" />
 
 			<p>Your browser doesn't support HTML video.</p>
 		</video>
 
-		<h1 :class="color" class="section-title">
-			{{ title }}
-		</h1>
 		<aside>
+			<h1 :class="color" class="section-title">
+				{{ title }}
+			</h1>
 			<h2>{{ subtitle }}</h2>
 			<ul>
 				<li v-for="item in items" :key="item[0]">
@@ -49,19 +49,6 @@ export default {
 		'imgSrc',
 		'destination',
 	],
-	methods: {
-		playVideo() {
-			console.log(
-				'playing video',
-				this.$el.querySelector('video')
-			);
-			this.$el.querySelector('video').play();
-		},
-	},
-
-	// mounted() {
-	// 	this.playVideo();
-	// },
 };
 </script>
 
@@ -75,7 +62,7 @@ section {
 	margin-bottom: 2rem;
 }
 h1 {
-	margin: 2rem 1.5rem;
+	margin-top: 2rem;
 	align-self: flex-start;
 }
 video {
@@ -135,15 +122,13 @@ a {
 
 @media (min-width: 550px) {
 	h1 {
-		margin: 2rem 6rem;
+		margin-top: 2rem;
 	}
 	aside {
 		width: 100%;
 		padding: 0rem 6rem;
 	}
-	section {
-		max-width: 92rem;
-	}
+
 	h2 {
 		font-size: 2.75rem;
 	}
@@ -165,17 +150,18 @@ a {
 @media (min-width: 1090px) {
 	section {
 		width: 100%;
+		padding: 0;
 	}
 	video {
 		width: 100%;
 		border-radius: 9px;
 	}
 	h1 {
-		margin: 2rem 8rem;
+		margin-top: 2rem;
 	}
 	aside {
 		width: 100%;
-		padding: 0rem 8rem;
+		padding: 0rem 10rem;
 	}
 
 	h2 {

@@ -62,6 +62,9 @@ p {
 	h2 {
 		align-self: flex-end;
 	}
+	article {
+		padding: 3rem 10rem;
+	}
 	/* .text-copy {
 		display: flex;
 		gap: 3rem;

@@ -12,7 +12,7 @@
 			/>
 			<meta charset="utf-8" />
 		</Head>
-		<main>
+		<main class="main-content">
 			<PageHeading
 				imgSrc="/imgs/online"
 				altText="animation of man in edit suite"
@@ -69,19 +69,6 @@ definePageMeta({
 </script>
 
 <style scoped>
-main {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	margin: 0 auto;
-	gap: 4rem;
-	width: 100vw;
-	max-width: 85rem;
-	padding: 0 1.5rem;
-	overflow-x: visable;
-	background-color: var(--dark-brown);
-}
 button {
 	display: flex;
 	align-items: center;
@@ -118,11 +105,5 @@ button {
 }
 
 @media (min-width: 1090px) {
-	main {
-		background-color: var(--dark-brown);
-		width: 75vw;
-		max-width: 190rem;
-		padding: 0 7.5rem;
-	}
 }
 </style>
