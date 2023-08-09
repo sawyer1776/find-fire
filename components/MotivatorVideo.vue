@@ -15,13 +15,13 @@
 	<video muted loop autoPlay playsInline preload="auto">
 		<source
 			srcset="
-			/imgs/videos/motivator-425w.webm 425w
-			/imgs/videos/motivator-920w.webm 920w,
-			/imgs/videos/motivator-1920w.webm 1920w
+				/imgs/videos/motivator-425w.webm   425w,
+				/imgs/videos/motivator-920w.webm   920w,
+				/imgs/videos/motivator-1920w.webm 1920w
 			"
 			sizes="(max-width: 1090px) 100vw,  
 			(max-width: 1700px, 75vw, 1250px)"
-			src="/imgs/videos/motivator-1920w.webm"
+			src="/imgs/videos/motivator-920w.webm"
 			type="video/webm"
 		/>
 		<source
