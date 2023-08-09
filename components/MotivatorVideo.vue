@@ -1,5 +1,5 @@
 <template>
-	<video muted loop playsinline autoplay preload="auto">
+	<!-- <video muted loop playsinline autoplay preload="auto">
 		<source
 			srcset="
 				/imgs/creative-920w.webm 920w,
@@ -11,8 +11,8 @@
 		<source src="/imgs/creative-max.mp4" type="video/mp4" />
 
 		<p>Your browser doesn't support HTML video.</p>
-	</video>
-	<!-- <video muted loop autoplay playsinline preload="auto">
+	</video> -->
+	<video muted loop autoplay playsinline preload="auto">
 		<source
 			srcset="
 				/imgs/videos/motivator-920w.webm 920w,
@@ -22,12 +22,12 @@
 			type="video/webm"
 		/>
 		<source
-			src="/imgs/videos/motivator-1920.mp4"
+			src="/imgs/videos/motivator-1920w.mp4"
 			type="video/mp4"
 		/>
 
 		<p>Your browser doesn't support HTML video.</p>
-	</video> -->
+	</video>
 	<!-- <video muted loop autoplay preload="auto" playsinline>
 		<source src="/imgs/motivator.webm" type="video/webm" />
 	</video> -->
