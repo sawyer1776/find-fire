@@ -1,5 +1,11 @@
 <template>
-	<video muted loop autoplay preload="auto" playsinline>
+	<video
+		muted="true"
+		loop="true"
+		autoplay="true"
+		preload="auto"
+		playsinline="true"
+	>
 		<source src="/imgs/motivator.webm" type="video/webm" />
 	</video>
 </template>
