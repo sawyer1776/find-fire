@@ -9,9 +9,17 @@
 			{{ text }}
 		</p>
 
+		<!-- <picture v-if="imgSrc">
+			<source :src="`${imgSrc}.webp`" type="image/webp" />
+
+			<source :src="`${imgSrc}.jpg`" type="image/jpeg" />
+
+			<img :src="`${imgSrc}.jpg`" :alt="altText" />
+		</picture> -->
+
 		<img
 			v-if="imgSrc"
-			:src="imgSrc"
+			:src="`${imgSrc}.webp`"
 			:alt="altText"
 			class="section-img"
 		/>

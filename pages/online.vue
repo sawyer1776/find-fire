@@ -32,14 +32,14 @@
 			/>
 			<SectionDescription
 				color="orange"
-				imgSrc="/imgs/online-vfx.webp"
+				imgSrc="/imgs/online-vfx"
 				altText="cut out image of an explosion"
 				title="VFX"
 				text="Flame, After Effects, Maya, 3D motion capture and more! Require visual  effects for your project? Allow us to service those needs for you.  Who doesn’t like a fun explosion?"
 			/>
 			<SectionDescription
 				color="red"
-				imgSrc="/imgs/online-mastering.webp"
+				imgSrc="/imgs/online-mastering"
 				altText="NEED NEW IMG"
 				title="Mastering & Delivery"
 				text="You’ve crossed the finish line of your project but need those last few mastering and export layout passes in order to get your project delivered. Allow our team to organize that work load for you, organize  the deliverables, and ensure all deadlines and needs are met. 

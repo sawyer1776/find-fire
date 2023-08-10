@@ -2,8 +2,34 @@
 	<footer>
 		<ul>
 			<li><h2>Contact</h2></li>
-			<li><p>Give us a call (123) 456-7890</p></li>
-			<li><p>Email: contact@findfiredigital</p></li>
+			<li>
+				<p>
+					Give us a call
+					<span
+						:class="{
+							clicked: showPhone === true,
+						}"
+						@click="setPhone"
+					>
+						{{
+							showPhone ? phoneNumber : 'show phone number'
+						}}
+					</span>
+				</p>
+			</li>
+			<li>
+				<p>
+					Email:
+					<span
+						:class="{
+							clicked: showEmail === true,
+						}"
+						@click="setEmailAddr"
+					>
+						{{ showEmail ? emailAddr : 'show email' }}
+					</span>
+				</p>
+			</li>
 		</ul>
 		<ul>
 			<li><h2>Reel</h2></li>
@@ -22,7 +48,40 @@
 	</footer>
 </template>
 
+<script>
+export default {
+	data() {
+		return {
+			showEmail: false,
+			showPhone: false,
+			emailAddr: '',
+			phoneNumber: '',
+		};
+	},
+
+	methods: {
+		setEmailAddr() {
+			this.emailAddr =
+				'contact' + '@find' + 'firedigital.com';
+			this.showEmail = true;
+		},
+		setPhone() {
+			this.phoneNumber = '(123) ' + '456-' + '7890';
+			this.showPhone = true;
+		},
+	},
+};
+</script>
+
 <style scoped>
+.clicked {
+	cursor: default;
+}
+
+span {
+	cursor: pointer;
+	font-weight: 800;
+}
 footer {
 	background-color: var(--brand-brown);
 	width: 100%;

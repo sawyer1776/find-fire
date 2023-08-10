@@ -31,7 +31,7 @@ video {
 		max-width: calc(100% - 20rem);
 		/* Matching 10rem padding section Description */
 		margin-bottom: 3rem;
-		margin-top: -3rem;
+		margin-top: -7rem;
 	}
 }
 </style>
