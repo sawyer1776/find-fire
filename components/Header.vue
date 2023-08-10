@@ -17,7 +17,7 @@
 					>
 				</li>
 				<li>
-					<NuxtLink to="/#services" @click="scrollServices">
+					<NuxtLink to="/#" @click="scrollServices">
 						Services
 					</NuxtLink>
 				</li>
@@ -50,7 +50,17 @@ export default {
 	data() {
 		return {
 			showMenu: false,
+			servicesY: 1850,
 		};
+	},
+	mounted() {
+		console.log(
+			'mounted',
+			(this.servicesY =
+				document.getElementById('services').offsetTop)
+		);
+		this.servicesY =
+			document.getElementById('services').offsetTop;
 	},
 	methods: {
 		toggleMenu() {
@@ -61,12 +71,8 @@ export default {
 			}
 		},
 		scrollServices() {
-			const services = document.getElementById('services');
-			const topCoord =
-				services.getBoundingClientRect().top +
-				window.scrollY;
 			window.scrollTo({
-				top: topCoord,
+				top: this.servicesY,
 				behavior: 'smooth',
 			});
 		},
