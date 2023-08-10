@@ -177,6 +177,10 @@ export default {
 			this.phoneNumber = '(123) ' + '456-' + '7890';
 			this.showPhone = !this.showPhone;
 		},
+		scrollContact() {
+			const contact = document.getElementById('contact');
+			contact.scrollIntoView({ behavior: 'smooth' });
+		},
 		submitForm() {
 			if (
 				this.nameIsValid === 'valid' &&
@@ -210,11 +214,11 @@ export default {
 				this.emailIsValid = 'pending';
 				this.phoneIsValid = 'pending';
 				this.nameIsValid = 'pending';
+				this.scrollContact();
 			} else {
 				this.validateName();
 				this.validateEmail();
-				getElementById('contact').focus();
-				console.log(getElementById('contact'));
+				this.scrollContact();
 			}
 		},
 		validateName() {

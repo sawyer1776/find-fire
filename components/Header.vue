@@ -12,10 +12,14 @@
 				@click="toggleMenu"
 			>
 				<li>
-					<NuxtLink to="/">Home</NuxtLink>
+					<NuxtLink to="/#" @click="scrollTop"
+						>Home</NuxtLink
+					>
 				</li>
 				<li>
-					<NuxtLink to="/#services">Services</NuxtLink>
+					<NuxtLink to="/#services" @click="scrollServices">
+						Services
+					</NuxtLink>
 				</li>
 				<li>
 					<NuxtLink to="/creative">Creative</NuxtLink>
@@ -28,9 +32,7 @@
 				</li>
 			</ul>
 			<div class="menu-contact">
-				<NuxtLink @click="showMenu = false" to="#contact">
-					<button>Contact</button>
-				</NuxtLink>
+				<button @click="scrollContact">Contact</button>
 
 				<Icon
 					@click="toggleMenu"
@@ -58,6 +60,26 @@ export default {
 				this.showMenu = true;
 			}
 		},
+		scrollServices() {
+			const services = document.getElementById('services');
+			const topCoord =
+				services.getBoundingClientRect().top +
+				window.scrollY;
+			window.scrollTo({
+				top: topCoord,
+				behavior: 'smooth',
+			});
+		},
+
+		scrollContact() {
+			this.showMenu = false;
+			const contact = document.getElementById('contact');
+			contact.scrollIntoView({ behavior: 'smooth' });
+		},
+
+		scrollTop() {
+			window.scrollTo({ top: 0, behavior: 'smooth' });
+		},
 	},
 };
 </script>
@@ -77,6 +99,10 @@ nav {
 	top: 0;
 	z-index: 1000;
 	border-bottom: 2px solid var(--dark-brown);
+}
+
+.pointer {
+	cursor: pointer;
 }
 
 button {

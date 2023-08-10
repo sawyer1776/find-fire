@@ -8,17 +8,35 @@
 			deliver beyond expectations.
 		</p>
 		<div class="buttons">
-			<NuxtLink to="#services">
-				<button class="wide background-white">
-					Learn More
-				</button>
-			</NuxtLink>
-			<NuxtLink to="#contact">
-				<button class="wide">Contact</button>
-			</NuxtLink>
+			<button
+				@click="scrollServices"
+				class="wide background-white"
+			>
+				Learn More
+			</button>
+
+			<button @click="scrollContact" class="wide">
+				Contact
+			</button>
 		</div>
 	</section>
 </template>
+<script>
+export default {
+	methods: {
+		scrollServices() {
+			const services = document.getElementById('services');
+			services.scrollIntoView({ behavior: 'smooth' });
+		},
+
+		scrollContact() {
+			const contact = document.getElementById('contact');
+			contact.scrollIntoView({ behavior: 'smooth' });
+		},
+	},
+};
+</script>
+
 <style scoped>
 .card {
 	display: flex;
