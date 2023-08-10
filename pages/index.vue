@@ -54,7 +54,7 @@
 				class="contact"
 				imgSrc="/imgs/online"
 				title="Online"
-				subtitle="We Provide the finishing touch"
+				subtitle="We provide the finishing touch"
 				color="red"
 				:items="[
 					['Color Grade', 'icon-park-solid:color-filter'],

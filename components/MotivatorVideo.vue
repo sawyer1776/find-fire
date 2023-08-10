@@ -21,7 +21,7 @@
 			"
 			sizes="(max-width: 1090px) 100vw,  
 			(max-width: 1700px, 75vw, 1250px)"
-			src="/imgs/videos/motivator-920w.webm"
+			src="/imgs/videos/motivator-1250w.webm"
 			type="video/webm"
 		/>
 		<source

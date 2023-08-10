@@ -3,11 +3,11 @@
 		<ul>
 			<li><h2>Contact</h2></li>
 			<li><p>Give us a call (123) 456-7890</p></li>
-			<li><p>email: contact@findfiredigital</p></li>
+			<li><p>Email: contact@findfiredigital</p></li>
 		</ul>
 		<ul>
 			<li><h2>Reel</h2></li>
-			<li><a href="#">View Reel</a></li>
+			<li><a href="#">View reel</a></li>
 		</ul>
 		<ul>
 			<li><h2>Services</h2></li>
