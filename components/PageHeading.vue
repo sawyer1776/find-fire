@@ -21,9 +21,10 @@
 					{{ subtitle }}
 				</h3>
 			</div>
-			<NuxtLink to="#contact" class="button">
-				<button class="wide">Contact</button>
-			</NuxtLink>
+
+			<button @click="scrollContact" class="wide button">
+				Contact
+			</button>
 		</div>
 	</div>
 </template>
@@ -37,6 +38,12 @@ export default {
 		'title',
 		'color',
 	],
+	methods: {
+		scrollContact() {
+			const contact = document.getElementById('contact');
+			contact.scrollIntoView({ behavior: 'smooth' });
+		},
+	},
 };
 </script>
 
@@ -53,7 +60,7 @@ export default {
 .button {
 	margin-top: 1rem;
 	width: 100%;
-	padding: 0 2rem;
+
 	max-width: 60rem;
 	align-self: center;
 }
