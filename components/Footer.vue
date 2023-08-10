@@ -80,7 +80,7 @@ export default {
 
 span {
 	cursor: pointer;
-	font-weight: 800;
+	font-weight: 600;
 }
 footer {
 	background-color: var(--brand-brown);

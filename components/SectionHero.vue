@@ -5,7 +5,7 @@
 				type="image/webp"
 				sizes="(max-width: 1090px) 100vw, 50vw"
 				srcset="
-					../public/imgs/logo-virtical-750w.webp    750w,
+					../public/imgs/logo-virtical-750w.webp    550w,
 					../public/imgs/logo-horizontal-1600w.webp
 				"
 			/>

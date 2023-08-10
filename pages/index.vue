@@ -80,7 +80,7 @@ definePageMeta({
 :root {
 	--brand-brown: #362420;
 	--dark-brown: #19100f;
-	--brand-orange: #ff7300;
+	--brand-orange: #ed7717;
 	--brand-yellow: #ffff01;
 	--brand-red: #fe0000;
 	--offwhite: #fef4eb;
