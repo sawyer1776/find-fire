@@ -174,7 +174,7 @@ export default {
 			this.showMessage = !this.showMessage;
 		},
 		setPhone() {
-			this.phoneNumber = '(123) ' + '456-' + '7890';
+			this.phoneNumber = '(303) ' + '717-' + '4703';
 			this.showPhone = !this.showPhone;
 		},
 		scrollContact() {

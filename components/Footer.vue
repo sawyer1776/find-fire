@@ -66,7 +66,7 @@ export default {
 			this.showEmail = true;
 		},
 		setPhone() {
-			this.phoneNumber = '(123) ' + '456-' + '7890';
+			this.phoneNumber = '(303) ' + '717-' + '4703';
 			this.showPhone = true;
 		},
 	},
